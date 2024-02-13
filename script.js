@@ -1,4 +1,4 @@
-function calculateGCD() {
+function calculateNOD() {
     var number1 = parseInt(document.getElementById('number1').value);
     var number2 = parseInt(document.getElementById('number2').value);
 
@@ -13,13 +13,13 @@ function calculateGCD() {
         return;
     }
     
-    var gcd = findGCD(number1, number2); 
-    document.getElementById('result').innerText = 'Наибольший общий делитель: ' + gcd;
+    var nod = findNOD(number1, number2); 
+    document.getElementById('result').innerText = 'Наибольший общий делитель: ' + nod;
 }
 
-function findGCD(a, b) {
+function findNOD(a, b) {
     if (b === 0) return a; 
-    return findGCD(b, a % b); 
+    return findNOD(b, a % b); 
 }
 
 function showError(errorMessage) {
