@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
 }
 
-input[type=text] {
+input[type=number] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
@@ -44,7 +44,37 @@ button:hover {
     background-color: #4cae4c;
 }
 
-#result {
-    margin-top: 15px;
-    height: 20px;
+.error {
+    color: red;
+}
+
+.error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.error-popup p {
+    margin: 0 0 10px;
+    color: red;
+}
+
+.error-popup button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-popup button:hover {
+    background-color: #4cae4c;
 }
