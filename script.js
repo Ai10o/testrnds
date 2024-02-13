@@ -1,27 +1,25 @@
 function calculateGCD() {
-    var number1 = document.getElementById('number1').value;
-    var number2 = document.getElementById('number2').value;
+    var number1 = parseInt(document.getElementById('number1').value);
+    var number2 = parseInt(document.getElementById('number2').value);
+
 
     if (!number1 || !number2 || parseInt(number1) < 0 || parseInt(number2) < 0) {
         showError("Значение не может быть пустым или меньше нуля");
         return;
     }
     
-    number1 = parseInt(number1, 10);
-    number2 = parseInt(number2, 10);
-    
     if (number1 === 0 || number2 === 0) {
         showError("Числа не могут быть равны нулю");
         return;
     }
     
-    while (number2 !== 0) {
-        var temp = number2;
-        number2 = number1 % number2;
-        number1 = temp;
-    }
-    
-    document.getElementById('result').innerText = 'Наибольший общий делитель: ' + number1;
+    var gcd = findGCD(number1, number2); 
+    document.getElementById('result').innerText = 'Наибольший общий делитель: ' + gcd;
+}
+
+function findGCD(a, b) {
+    if (b === 0) return a; 
+    return findGCD(b, a % b); 
 }
 
 function showError(errorMessage) {
