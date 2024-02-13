@@ -4,6 +4,4 @@
 
 ![image](https://github.com/Ai10o/testrnds/assets/91592355/928d1c77-047b-449c-aed0-cd7806e59f95)
 
-![image](https://github.com/Ai10o/testrnds/assets/91592355/bca0c257-27d5-4146-9f4b-cc779c128239)
-
-
+![image](https://github.com/Ai10o/testrnds/assets/91592355/c84299d1-7010-4e61-8856-4fcaeb2e6855)
