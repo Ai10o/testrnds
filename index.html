@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НОД Калькулятор</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="NOD-calculator">
-        <input id="number1" type="number" placeholder="Введите первое число" maxlength="6">
-        <input id="number2" type="number" placeholder="Введите второе число" maxlength="6">
-        <button onclick="calculateNOD()">Найти НОД</button>
-        <p id="result"></p>
+        
+        <input id="number1" type="number" placeholder="Первое число">
+
+        <input id="number2" type="number" placeholder="Второе число">
+
+        <button id="calculate" class="button">Найти НОД</button>
+        <p id="result">Наибольший общий делитель: <span id="NOD-result"></span></p>
+
         <div id="error-popup" class="error-popup">
             <p id="error-message"></p>
-            <button onclick="hideError()">OK</button>
+            <button id="close-error" class="button">OK</button>
         </div>
     </div>
     <script src="script.js"></script>

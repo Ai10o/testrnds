@@ -1,0 +1,75 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --calculator-bg-color: #ffffff;
+    --button-bg-color: #5cb85c;
+    --button-bg-hover-color: #4cae4c;
+    --input-border-color: #ddd;
+    --error-color: red;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#NOD-calculator {
+    background: var(--calculator-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type=number] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    display: block;
+    width: calc(100% - 22px); 
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: var(--button-bg-hover-color);
+}
+
+.error {
+    color: var(--error-color);
+}
+
+.error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--calculator-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    display: none;
+}
+
+.error-popup p {
+    margin: 0 0 10px;
+    color: var(--error-color);
+}
