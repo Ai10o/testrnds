@@ -5,4 +5,3 @@
 
 ![image](https://github.com/Ai10o/testrnds/assets/91592355/c84299d1-7010-4e61-8856-4fcaeb2e6855)
 
-[ссылка](https://obscure-tribble-wjj9jqpw54536r7-39553.app.github.dev/) на codespace
